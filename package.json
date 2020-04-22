@@ -1,0 +1,24 @@
+{
+  "name": "burger_logger",
+  "version": "1.0.0",
+  "description": "npm, express, handlebar, mysql burger logging test application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brian-Fairbanks/BurgerLogger.git"
+  },
+  "author": "brian-fairbanks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brian-Fairbanks/BurgerLogger/issues"
+  },
+  "homepage": "https://github.com/Brian-Fairbanks/BurgerLogger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "mysql": "^2.18.1"
+  }
+}
