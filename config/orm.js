@@ -16,7 +16,7 @@ function insertOne(props){
 
 function updateOne(props){
     return connection.query(`
-    UPDATE ?? SET ? = ? WHERE ? = ?;
+    UPDATE ?? SET ?? = ? WHERE ?? = ?;
     `,
     [props.table, props.updateField, props.change, props.whereField, props.where]
     );

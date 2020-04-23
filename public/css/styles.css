@@ -14,3 +14,7 @@ body{
     min-height:100px;
     padding:3px;
 }
+
+.colHead{
+    border-bottom:1px solid #888;
+}

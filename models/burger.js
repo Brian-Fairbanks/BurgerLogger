@@ -5,12 +5,13 @@ function get(){
 }
 
 function add(burger){
-    return orm.addBurger({table:"burgers", obj:burger})
+    console.log(burger);
+    return orm.insertOne({table:"burgers", obj:burger})
 }
 
 function devour(burger){
     //props.table, props.updateField, props.change, props.whereField, props.where
-    return orm.addBurger({table:"burgers", updateField:"devoured", change:"1", whereField:"id", where:burger})
+    return orm.updateOne({table:"burgers", updateField:"devoured", change:"1", whereField:"id", where:burger})
 }
 
 module.exports={

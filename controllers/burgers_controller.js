@@ -5,7 +5,7 @@ module.exports = function(app){
     app.get("/api/burgers", async function(req,res){
         try{
             let allBurg = await burgers.get();
-            console.log(allBurg);
+            //console.log(allBurg);
             res.json(allBurg);
         }
         catch(err){
@@ -17,7 +17,16 @@ module.exports = function(app){
     // API to add a burger
     app.post("/api/burgers", function(req, res){
         let burger=req.body;
-        burgers.add({burger_name:burger.name, devoured:0});
+        console.log(burger)
+        res.send(burgers.add({burger_name:burger.burger_name, devoured:0}));
+    });
+
+    // API to devour a burger
+    app.get("/api/burgers/:id", function(req, res){
+        let burger=parseInt(req.params.id);
+        //console.log(burger);
+
+        res.send(burgers.devour(burger));
     });
 
 }
