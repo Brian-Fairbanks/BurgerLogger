@@ -1,0 +1,16 @@
+body{
+    background:#CCC;
+}
+
+.orange{
+    background:#f90;
+}
+
+#logo{
+    max-height:200px;
+}
+
+.data-well{
+    min-height:100px;
+    padding:3px;
+}
